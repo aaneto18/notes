@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - master
+      - stable*
   pull_request:
 
 jobs:
@@ -66,3 +67,4 @@ jobs:
       uses: korelstar/phplint-problem-matcher@master
     - name: lint PHP
       run: make -k lint-php
+
